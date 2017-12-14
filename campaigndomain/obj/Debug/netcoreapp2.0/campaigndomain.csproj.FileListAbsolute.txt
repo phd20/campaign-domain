@@ -10,3 +10,4 @@
 /Users/kirkwiebe/Documents/GitHub/campaign-domain/campaigndomain/bin/Debug/netcoreapp2.0/campaigndomain.pdb
 /Users/kirkwiebe/Documents/GitHub/campaign-domain/campaigndomain/obj/Debug/netcoreapp2.0/campaigndomain.dll
 /Users/kirkwiebe/Documents/GitHub/campaign-domain/campaigndomain/obj/Debug/netcoreapp2.0/campaigndomain.pdb
+/Users/kirkwiebe/Documents/GitHub/campaign-domain/campaigndomain/bin/Debug/netcoreapp2.0/app.db
