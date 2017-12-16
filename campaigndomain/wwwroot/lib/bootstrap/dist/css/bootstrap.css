@@ -240,6 +240,7 @@ th {
   }
   .navbar {
     display: none;
+
   }
   .btn > .caret,
   .dropup > .btn > .caret {
@@ -4589,8 +4590,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: #222;
-  border-color: #080808;
+  background-color: #212121;
+  border-color: #484848;
 }
 .navbar-inverse .navbar-brand {
   color: #9d9d9d;
@@ -4600,9 +4601,9 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #fff;
   background-color: transparent;
 }
-.navbar-inverse .navbar-text {
-  color: #9d9d9d;
-}
+    .navbar-inverse .navbar-text {
+        color: #484848;
+    }
 .navbar-inverse .navbar-nav > li > a {
   color: #9d9d9d;
 }
@@ -4956,11 +4957,12 @@ a.badge:focus {
   margin-left: 3px;
 }
 .jumbotron {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
-  color: inherit;
-  background-color: #eee;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top:15px;
+    margin-bottom: 30px;
+    color: white;
+    background-color: #212121;
 }
 .jumbotron h1,
 .jumbotron .h1 {
