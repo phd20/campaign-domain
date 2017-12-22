@@ -6,8 +6,10 @@
     <title>@ViewData["Title"] - Campaign Domain</title>
 
     <environment include="Development">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
+        <script src="~/js/fontawesome-all.js"></script> 
     </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -29,11 +31,11 @@
                 <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Campaign Domain</a>
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+                <!--<ul class="nav navbar-nav">
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                </ul>
+                </ul> -->
                 @await Html.PartialAsync("_LoginPartial")
             </div>
         </div>
@@ -42,7 +44,33 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2017 - Campaign Domain</p>
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-3">
+                  <p>&copy; 2017 - Campaign Domain</p>
+                </div>
+                <div class="col-sm-3">
+                  <a asp-area="" asp-controller="Home" asp-action="Contact">Contact Us</a>
+                </div>
+                <div class="col-sm-3">
+                  <a href="https://www.facebook.com/campaigndomain" target="_blank"><i class="fab fa-facebook-square"></i>  Like Us</a>
+                </div>
+                <div class="col-sm-3">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-3">
+                </div>
+                <div class="col-sm-3">
+                  <a asp-area="" asp-controller="Home" asp-action="About">About</a>
+                </div>
+                <div class="col-sm-3">
+                  <a href="https://www.twitter.com/campaign\_domain" target="_blank"><i class="fab fa-twitter-square"></i>  Follow Us</a>
+                </div>
+                <div class="col-sm-3">
+                </div>
+              </div>
+            </div>
         </footer>
     </div>
 

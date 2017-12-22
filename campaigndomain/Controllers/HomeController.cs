@@ -12,6 +12,16 @@ namespace campaigndomain.Controllers
     {
         public IActionResult Index()
         {
+            if(User.Identity.IsAuthenticated){
+                return RedirectToAction("AuthenticatedIndex", "Home");
+            }
+            return View();
+        }
+
+        public IActionResult AuthenticatedIndex()
+        {
+            ViewData["Message"] = "You are authenticated!";
+
             return View();
         }
 

@@ -1,6 +1,8 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+     background-color: #fff;
 }
 
 /* Wrapping element */
@@ -11,7 +13,21 @@
 }
 
 #home-signup {
-    background-color: #484848;
-    padding: 15px;
+    background-color: #1b1b1b;
+    padding: 0px 15px 15px 15px;
     border-radius: 5px;
+    box-shadow: 3px 3px #6d6d6d;
+}
+
+h1, h2, h3, h4 {
+    font-weight: bold;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+#create {
+    color: #fff;
 }

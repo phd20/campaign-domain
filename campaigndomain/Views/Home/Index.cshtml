@@ -9,11 +9,11 @@
             <div class="col-md-8">
                 <h1 class="display-3">Ultimate campaign management system.</h1>
                 <hr class="my-4">
-                <p class="lead">We're building the ultimate campaign management system for tabletop RPGs. The project will go live soon so sign up to be notified!</p>
+                <p class="lead">Welcome to Campaign Domain. We're building the ultimate campaign management system for tabletop RPGs. The project will go live soon so sign up for an account to be notified!</p>
             </div>
-            <div class="col-md-4" id="home-signup"=>
-                <form asp-route-returnUrl="@ViewData[" ReturnUrl "]" method="post">
-                    <h4>Create a new account.</h4>
+            <div class="col-md-4" id="home-signup">
+                <form asp-controller="Account" asp-route-returnUrl="@ViewData[" ReturnUrl "]" asp-action="Register" method="post">
+                    <h3>Create a new account.</h3>
                     <hr />
                     <div asp-validation-summary="All" class="text-danger"></div>
                     <div class="form-group">
@@ -31,9 +31,14 @@
                         <input asp-for="ConfirmPassword" class="form-control" />
                         <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
                     </div>
-                    <button type="submit" class="btn btn-default">Register</button>
+                    <p>Text about password requirements.</p>
+                    <button type="submit" class="btn btn-block"><h4>Sign Up</h4></button>
                 </form>
             </div>
         </div>
     </div>
 </div>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}
